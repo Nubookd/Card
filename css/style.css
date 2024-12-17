@@ -1,0 +1,121 @@
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.card_list li{
+    color: #000;
+}
+
+.card_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    background-color: #777777;
+    border-radius: 6vw;
+    height: 35vw;
+    overflow: hidden;
+    width: 40vw;
+    justify-content: center;
+}
+
+.card_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
+    top: 0;
+}
+
+.card_img img {
+    width: 20vw;
+    border-radius: 3vw;
+}
+
+.card_title {
+    position: absolute;
+    font-size: 1.5vw;
+    top: 31vw;
+    height: 4vw;
+    padding: 0 3vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card_inner:hover .card_title {
+    top: 24vw;
+    transition: 2s;
+}
+
+.card_title p {
+    margin: 0;
+    margin-bottom: 0.5vw;
+}
+
+.card_list {
+    display: none;
+    flex-direction: column;
+    bottom: 0;
+    align-items: center;
+    padding: 0;
+    margin: 0 5vw;
+    font-size: 1vw;
+}
+
+.card_inner:hover .card_list {
+    display: flex;
+    text-align: center;
+    transform: translatey(-70%);
+}
+
+
+.card_inner:hover {
+    height: 35vw;
+    transition: 1s;
+    overflow: visible;
+    margin-top: 8vw;
+}
+
+.card_inner:hover .card_img {
+    top: 10vw;
+    scale: 0.75;
+    transition: 2s;
+    transform: translatey(-60%);
+}
+
+.card_inner:hover .card_img img {
+    object-fit: cover;
+    transition: 2s;
+}
+
+.card_inner:hover .card_button {
+    display: flex;
+    flex-direction: column;
+    background-color: #979797;
+    margin: 0 15vw;
+    margin-top: -3vw;
+    padding: 0.5vw;
+    align-items: center;
+    font-size: 1vw;
+    border-radius: 3vw;
+}
+
+.card_button {
+    display: none;
+}
+
+.card_text {
+    display: flex;
+    flex-direction: column;
+}
